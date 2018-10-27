@@ -1,0 +1,35 @@
+{
+    "name": "Pedido",
+    "fields": [
+        {
+            "fieldName": "data",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "pedido",
+            "relationshipName": "produto",
+            "otherEntityName": "produto",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "usuario",
+            "otherEntityName": "usuario",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181027200444",
+    "entityTableName": "pedido",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "CandyShop",
+    "applications": "*",
+    "microserviceName": "CandyShop"
+}

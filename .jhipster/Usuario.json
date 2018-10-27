@@ -1,0 +1,35 @@
+{
+    "name": "Usuario",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "token",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "pedido",
+            "otherEntityName": "pedido",
+            "otherEntityRelationshipName": "usuario"
+        }
+    ],
+    "changelogDate": "20181027200445",
+    "entityTableName": "usuario",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "CandyShop",
+    "applications": "*",
+    "microserviceName": "CandyShop"
+}

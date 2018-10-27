@@ -1,0 +1,27 @@
+{
+    "name": "Categoria",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "produto",
+            "otherEntityName": "produto",
+            "otherEntityRelationshipName": "categoria"
+        }
+    ],
+    "changelogDate": "20181027200447",
+    "entityTableName": "categoria",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "CandyShop",
+    "applications": "*",
+    "microserviceName": "CandyShop"
+}

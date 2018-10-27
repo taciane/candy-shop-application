@@ -1,0 +1,31 @@
+{
+    "name": "Ponto",
+    "fields": [
+        {
+            "fieldName": "quantidade",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "data",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "usuario",
+            "otherEntityName": "usuario",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181027200446",
+    "entityTableName": "ponto",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "CandyShop",
+    "applications": "*",
+    "microserviceName": "CandyShop"
+}
