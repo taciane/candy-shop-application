@@ -1,0 +1,51 @@
+entity Produto {
+	nome String,
+    preco String,
+    estoque Integer
+}
+
+entity Pedido {
+	data LocalDate
+}
+
+entity Usuario {
+	nome String,
+    email String,
+    token String
+}
+
+entity Ponto {
+	quantidade String,
+    data LocalDate
+}
+
+entity Categoria{
+	nome String
+}
+
+//relationship OneToOne {
+//	Country{region} to Region
+//}
+
+relationship ManyToMany {
+	Pedido{produto} to Produto{pedido}
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Categoria{produto} to Produto{categoria},
+    Usuario{pedido} to Pedido{usuario}
+}
+
+relationship ManyToOne {
+	Ponto{usuario} to Usuario
+}
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
